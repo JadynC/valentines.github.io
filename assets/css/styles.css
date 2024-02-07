@@ -1,0 +1,47 @@
+/* styles.css */
+body {
+    text-align: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: pink; /* Or any color you prefer */
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    padding-top: 50px;
+  }
+
+#yes {
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#no {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+img {
+    max-width: 100%; /* Makes image responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-top: 20px; /* Adds space above the image */
+}

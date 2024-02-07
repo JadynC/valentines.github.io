@@ -1,1 +1,36 @@
-"hello world" 
+<!doctype html>
+<html>
+<head>
+    <title>Valentines</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+</head>
+<body>
+    <img src="./assets/img/hiseal.gif" alt="Hi seal">
+    <h1>Be my valentine?</h1>
+    <button  onclick="window.location.href='yay.html'" id="yes" style="font-size: 16px; border-radius: 20px;">yes</button>
+    <!-- <a id="yes" href="yay.html" class="button">yes</a> -->
+    <button id="no" style="border-radius: 20px; position: relative; margin-top: 10px;" onclick="moveButton()">no</button>
+
+    <script>
+        function moveButton() {
+            var noButton = document.getElementById("no");
+            var yesButton = document.getElementById("yes");
+
+            // Generate random position within the window boundaries
+            var newX = Math.random() * window.innerWidth;
+            var newY = Math.random() * window.innerHeight;
+
+            // Move the no button to the new position
+            noButton.style.position = 'absolute';
+            noButton.style.left = newX + 'px';
+            noButton.style.top = newY + 'px';
+
+            // Increase the font size of the yes button
+            var currentSize = parseFloat(yesButton.style.fontSize);
+            yesButton.style.fontSize = (currentSize + 20) + 'px';
+        }
+    </script>
+</body>
+</html>
+
+
